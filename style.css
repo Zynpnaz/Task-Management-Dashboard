@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: calc(1em + 0.5rem);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Heebo', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background: #9796f0;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#fbc7d468), to(#9796f0db));
+  background: linear-gradient(to right, #fbc7d468, #9796f0db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sections {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 100%;
+  border-right: 1px solid #e6e6e6;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .sections header {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sections header .title-bar span {
+  width: 10px;
+  height: 10px;
+  background-color: #FBC023;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container .sections header .title-bar span::before, .container .sections header .title-bar span::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.container .sections header .title-bar span::before {
+  background-color: #FE4E46;
+  right: 13px;
+}
+
+.container .sections header .title-bar span::after {
+  background-color: #7DD220;
+  left: 13px;
+}
+
+.container .sections header .close-button {
+  position: relative;
+}
+
+.container .sections header .close-button span {
+  cursor: pointer;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #afb2c3 transparent  transparent  #afb2c3;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.container .sections header .close-button span:nth-child(2) {
+  right: -3px;
+}
+
+.container .sections .menu-items {
+  margin-top: 100px;
+}
+
+.container .sections .menu-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container .sections .menu-items ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 10px 40px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container .sections .menu-items ul li:last-child {
+  background-color: #f1f1f1;
+  position: absolute;
+  bottom: 0;
+  color: #8e92a4;
+}
+
+.container .sections .menu-items ul li:last-child:hover {
+  color: #565656;
+}
+
+.container .sections .menu-items ul li:not(:last-child):hover {
+  background-color: #fff1f1;
+}
+
+.container .sections .menu-items ul li svg {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.container .sections .menu-items ul li span {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.container main {
+  padding: 0 10px 40px 40px;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container main .links {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.container main .links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container main .links ul li {
+  padding: 20px 20px 11px 20px;
+}
+
+.container main .links ul li a {
+  text-decoration: none;
+  color: #828594;
+  font-weight: 600;
+  font-size: .8rem;
+  padding: 15px 25px;
+}
+
+.container main .links ul li a:hover {
+  border-bottom: 2px solid #9957ab3e;
+}
+
+.container main .links ul li .active {
+  color: #9957AB;
+  border-bottom: 2px solid #9957AB;
+}
+
+.container main h2 {
+  letter-spacing: 1px;
+  line-height: 3;
+  color: #400052;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 10px;
+}
+
+.container main .tasks .task {
+  margin: 2px 0;
+  padding: 5px;
+  position: relative;
+}
+
+.container main .tasks .task input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.container main .tasks .task input:checked + span:after {
+  background: #9957AB;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.container main .tasks .task input:focus + label:after {
+  outline: 1px auto gray;
+}
+
+.container main .tasks .task span {
+  position: absolute;
+  top: 10px;
+  width: 15px;
+  height: 14px;
+}
+
+.container main .tasks .task span:after {
+  content: ' ';
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: background .1s linear;
+  transition: background .1s linear;
+}
+
+.container main .tasks .task span svg {
+  position: absolute;
+  right: -1px;
+  z-index: 2;
+}
+
+.container main .tasks .task .orange, .container main .tasks .task .red {
+  position: absolute;
+  right: 40px;
+  font-size: .5rem;
+  font-weight: 600;
+  padding: 0 7px;
+  border-radius: 20px;
+}
+
+.container main .tasks .task .orange {
+  background-color: #cbcbcb81;
+  color: #8a8a8a;
+}
+
+.container main .tasks .task .red {
+  background-color: #ffa9a065;
+  color: #f93722fe;
+}
+
+.container main .tasks .task label {
+  font-size: .9rem;
+  margin-left: 25px;
+}
+
+.container .schedule {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: 100%;
+  border-left: 1px solid #e6e6e6;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  overflow: scroll;
+}
+/*# sourceMappingURL=style.css.map */
