@@ -22,7 +22,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
 
 // Styles
 body{
@@ -170,7 +170,7 @@ body{
                     a{
                         text-decoration: none;
                         color: #828594;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: .8rem;
                         padding: 15px 25px;
 
@@ -189,10 +189,10 @@ body{
 
         h2{
             letter-spacing: 1px;
-            line-height: 3;
+            line-height: 2.5;
             color: #400052;
             border-bottom: 1px solid #e6e6e6; 
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .tasks{
@@ -200,6 +200,20 @@ body{
                 margin: 2px 0;
                 padding: 5px;
                 position: relative;
+                cursor: pointer;
+
+                &:hover{
+                    margin-right: -3px;
+
+                    label{
+                        margin-left: 28px;
+                    }
+
+                    span{
+                        margin-left: 3px;
+                    }
+                }
+
                 input{
                     appearance: none;
                     -webkit-appearance: none;
@@ -235,44 +249,108 @@ body{
 
                     svg{
                         position: absolute;
-                        right: -1px;
                         z-index: 2;
                     }
                 }
 
-                .orange, .red{
+                .purple, .red{
                     position: absolute;
                     right: 40px;
                     font-size: .5rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     padding: 0 7px;
                     border-radius: 20px;
                 }
 
-                .orange{
-                    background-color: #cbcbcb81;
-                    color: #8a8a8a;
+                .purple{
+                    background-color: #ece7fe;
+                    color: #8a6aff;
                 }
 
                 .red{
-                    background-color: #ffa9a065;
+                    background-color: #fde7ea;
                     color: #f93722fe;
                 }
 
                 label{
                    font-size: .9rem;
                    margin-left: 25px; 
+                   cursor: pointer;
+
+                 
                 }
             }
         }
     }
 
-    .schedule{
-        flex: 3;
+    .reminder{
+        flex: 2;
         height: 100%;
         border-left: 1px solid #e6e6e6;
         border-top-right-radius: 7px;
         border-bottom-right-radius: 7px;
         overflow: scroll;
+        padding: 20px 30px;
+
+        h3{
+            margin-top: 30px;
+            color: #565656;
+        }
+
+        .cards{
+            margin-top: 20px;
+            padding: 5px;
+            .card{
+                width: 100%;
+                height: 100px;
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+
+               svg{
+                    width: 45px;
+                    margin-right: 20px;
+               }
+
+               .title{
+                    h4{
+                        font-size: 1rem;
+                        color: #616161;
+                        font-weight: 500;
+                    }
+
+                    .time{
+                        font-size: .7rem;
+                        color: #8e92a4;
+                    }
+               }
+            }
+
+            .red{
+                background-color: #f9e2e2;
+            }
+
+            .blue{
+                background-color: #e2ebf9;
+            }
+
+            .purple{
+                background-color: #efe2f9;
+            }
+
+            .yellow{
+                background-color: #fff1d6;
+            }
+
+            .green{
+                background-color: #dbf7dd;
+            }
+
+            .pink{
+                background-color: #f9e2f8;
+            }
+        }
     }
 }

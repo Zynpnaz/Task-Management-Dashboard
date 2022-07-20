@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -202,7 +202,7 @@ body {
 .container main .links ul li a {
   text-decoration: none;
   color: #828594;
-  font-weight: 600;
+  font-weight: 500;
   font-size: .8rem;
   padding: 15px 25px;
 }
@@ -218,16 +218,29 @@ body {
 
 .container main h2 {
   letter-spacing: 1px;
-  line-height: 3;
+  line-height: 2.5;
   color: #400052;
   border-bottom: 1px solid #e6e6e6;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .container main .tasks .task {
   margin: 2px 0;
   padding: 5px;
   position: relative;
+  cursor: pointer;
+}
+
+.container main .tasks .task:hover {
+  margin-right: -3px;
+}
+
+.container main .tasks .task:hover label {
+  margin-left: 28px;
+}
+
+.container main .tasks .task:hover span {
+  margin-left: 3px;
 }
 
 .container main .tasks .task input {
@@ -268,42 +281,107 @@ body {
 
 .container main .tasks .task span svg {
   position: absolute;
-  right: -1px;
   z-index: 2;
 }
 
-.container main .tasks .task .orange, .container main .tasks .task .red {
+.container main .tasks .task .purple, .container main .tasks .task .red {
   position: absolute;
   right: 40px;
   font-size: .5rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0 7px;
   border-radius: 20px;
 }
 
-.container main .tasks .task .orange {
-  background-color: #cbcbcb81;
-  color: #8a8a8a;
+.container main .tasks .task .purple {
+  background-color: #ece7fe;
+  color: #8a6aff;
 }
 
 .container main .tasks .task .red {
-  background-color: #ffa9a065;
+  background-color: #fde7ea;
   color: #f93722fe;
 }
 
 .container main .tasks .task label {
   font-size: .9rem;
   margin-left: 25px;
+  cursor: pointer;
 }
 
-.container .schedule {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+.container .reminder {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   height: 100%;
   border-left: 1px solid #e6e6e6;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
   overflow: scroll;
+  padding: 20px 30px;
+}
+
+.container .reminder h3 {
+  margin-top: 30px;
+  color: #565656;
+}
+
+.container .reminder .cards {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.container .reminder .cards .card {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .reminder .cards .card svg {
+  width: 45px;
+  margin-right: 20px;
+}
+
+.container .reminder .cards .card .title h4 {
+  font-size: 1rem;
+  color: #616161;
+  font-weight: 500;
+}
+
+.container .reminder .cards .card .title .time {
+  font-size: .7rem;
+  color: #8e92a4;
+}
+
+.container .reminder .cards .red {
+  background-color: #f9e2e2;
+}
+
+.container .reminder .cards .blue {
+  background-color: #e2ebf9;
+}
+
+.container .reminder .cards .purple {
+  background-color: #efe2f9;
+}
+
+.container .reminder .cards .yellow {
+  background-color: #fff1d6;
+}
+
+.container .reminder .cards .green {
+  background-color: #dbf7dd;
+}
+
+.container .reminder .cards .pink {
+  background-color: #f9e2f8;
 }
 /*# sourceMappingURL=style.css.map */
