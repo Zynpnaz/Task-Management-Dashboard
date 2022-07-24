@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
@@ -15,7 +14,7 @@ html, body {
 body {
   line-height: calc(1em + 0.5rem);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -23,21 +22,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: #9796f0;
-  /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#fbc7d468), to(#9796f0db));
-  background: linear-gradient(to right, #fbc7d468, #9796f0db);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: rgba(151, 150, 240, 0.8588235294);
+  background: linear-gradient(to right, rgba(251, 199, 212, 0.4078431373), rgba(151, 150, 240, 0.8588235294));
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Raleway', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -45,15 +35,10 @@ body {
   width: 90%;
   height: 90%;
   border-radius: 7px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .container .sections {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   height: 100%;
   border-right: 1px solid #e6e6e6;
   border-top-left-radius: 7px;
@@ -61,20 +46,12 @@ body {
   overflow: hidden;
   position: relative;
 }
-
 .container .sections header {
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .container .sections header .title-bar span {
   width: 10px;
   height: 10px;
@@ -84,29 +61,24 @@ body {
   margin-left: 10px;
   cursor: pointer;
 }
-
 .container .sections header .title-bar span::before, .container .sections header .title-bar span::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   border-radius: 50%;
   position: absolute;
 }
-
 .container .sections header .title-bar span::before {
   background-color: #FE4E46;
   right: 13px;
 }
-
 .container .sections header .title-bar span::after {
   background-color: #7DD220;
   left: 13px;
 }
-
 .container .sections header .close-button {
   position: relative;
 }
-
 .container .sections header .close-button span {
   cursor: pointer;
   position: absolute;
@@ -114,71 +86,54 @@ body {
   height: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #afb2c3 transparent  transparent  #afb2c3;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  border-color: #afb2c3 transparent transparent #afb2c3;
+  transform: rotate(-45deg);
 }
-
 .container .sections header .close-button span:nth-child(2) {
   right: -3px;
 }
-
 .container .sections .menu-items {
   margin-top: 100px;
 }
-
 .container .sections .menu-items ul {
   list-style: none;
   padding: 0;
 }
-
 .container .sections .menu-items ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: normal;
   padding: 10px 10px 10px 40px;
   width: 100%;
   cursor: pointer;
 }
-
 .container .sections .menu-items ul li:last-child {
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
   position: absolute;
   bottom: 0;
-  color: #8e92a4;
+  color: #757a97;
 }
-
 .container .sections .menu-items ul li:last-child:hover {
-  color: #565656;
+  color: #3c3f50;
 }
-
 .container .sections .menu-items ul li:not(:last-child):hover {
-  background-color: #fff1f1;
+  background-color: #f0f0f0;
 }
-
 .container .sections .menu-items ul li svg {
   width: 16px;
   margin-right: 10px;
 }
-
 .container .sections .menu-items ul li span {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
-
 .container main {
   padding: 0 10px 40px 40px;
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
+  flex: 6;
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
 }
-
 .container main .links {
   position: -webkit-sticky;
   position: sticky;
@@ -186,63 +141,51 @@ body {
   z-index: 10;
   background-color: #fff;
   padding: 20px 0;
+  overflow: scroll;
 }
-
 .container main .links ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .container main .links ul li {
   padding: 20px 20px 11px 20px;
 }
-
 .container main .links ul li a {
   text-decoration: none;
   color: #828594;
   font-weight: 500;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 15px 25px;
 }
-
 .container main .links ul li a:hover {
-  border-bottom: 2px solid #9957ab3e;
+  border-bottom: 2px solid #e1cee7;
 }
-
 .container main .links ul li .active {
   color: #9957AB;
   border-bottom: 2px solid #9957AB;
 }
-
 .container main h2 {
   letter-spacing: 1px;
   line-height: 2.5;
-  color: #400052;
+  color: #4e2c57;
   border-bottom: 1px solid #e6e6e6;
   margin-top: 15px;
 }
-
 .container main .tasks .task {
   margin: 2px 0;
   padding: 5px;
   position: relative;
   cursor: pointer;
 }
-
 .container main .tasks .task:hover {
   margin-right: -3px;
 }
-
 .container main .tasks .task:hover label {
   margin-left: 28px;
 }
-
 .container main .tasks .task:hover span {
   margin-left: 3px;
 }
-
 .container main .tasks .task input {
   -moz-appearance: none;
        appearance: none;
@@ -250,69 +193,56 @@ body {
   position: absolute;
   opacity: 0;
 }
-
 .container main .tasks .task input:checked + span:after {
   background: #9957AB;
-  color: #FFFFFF;
+  color: #fff;
   border: 0;
 }
-
 .container main .tasks .task input:focus + label:after {
-  outline: 1px auto gray;
+  outline: 1px auto #e6e6e6;
 }
-
 .container main .tasks .task span {
   position: absolute;
   top: 10px;
   width: 15px;
   height: 14px;
 }
-
 .container main .tasks .task span:after {
-  content: ' ';
-  border: 1px solid #DDDDDD;
+  content: " ";
+  border: 1px solid #cdcdcd;
   border-radius: 2px;
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transition: background .1s linear;
-  transition: background .1s linear;
+  transition: background 0.1s linear;
 }
-
 .container main .tasks .task span svg {
   position: absolute;
   z-index: 2;
 }
-
 .container main .tasks .task .purple, .container main .tasks .task .red {
   position: absolute;
   right: 40px;
-  font-size: .5rem;
+  font-size: 0.5rem;
   font-weight: 500;
   padding: 0 7px;
   border-radius: 20px;
 }
-
 .container main .tasks .task .purple {
-  background-color: #ece7fe;
+  background-color: #eeeaff;
   color: #8a6aff;
 }
-
 .container main .tasks .task .red {
-  background-color: #fde7ea;
-  color: #f93722fe;
+  color: rgba(249, 55, 34, 0.9960784314);
+  background-color: rgba(254, 221, 218, 0.9960784314);
 }
-
 .container main .tasks .task label {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: 25px;
   cursor: pointer;
 }
-
 .container .reminder {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   height: 100%;
   border-left: 1px solid #e6e6e6;
   border-top-right-radius: 7px;
@@ -320,68 +250,113 @@ body {
   overflow: scroll;
   padding: 20px 30px;
 }
-
 .container .reminder h3 {
   margin-top: 30px;
-  color: #565656;
+  color: #5d627c;
 }
-
 .container .reminder .cards {
   margin-top: 20px;
   padding: 5px;
 }
-
 .container .reminder .cards .card {
   width: 100%;
   height: 100px;
   margin: 10px 0;
   padding: 10px;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  cursor: pointer;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  justify-content: normal;
 }
-
+.container .reminder .cards .card:hover svg {
+  width: 50px;
+}
 .container .reminder .cards .card svg {
   width: 45px;
   margin-right: 20px;
+  transition: 0.2s;
 }
-
 .container .reminder .cards .card .title h4 {
   font-size: 1rem;
-  color: #616161;
+  color: #52566d;
   font-weight: 500;
 }
-
 .container .reminder .cards .card .title .time {
-  font-size: .7rem;
-  color: #8e92a4;
+  font-size: 0.7rem;
+  color: #828594;
 }
-
 .container .reminder .cards .red {
   background-color: #f9e2e2;
 }
-
 .container .reminder .cards .blue {
   background-color: #e2ebf9;
 }
-
 .container .reminder .cards .purple {
   background-color: #efe2f9;
 }
-
 .container .reminder .cards .yellow {
   background-color: #fff1d6;
 }
-
 .container .reminder .cards .green {
   background-color: #dbf7dd;
 }
-
 .container .reminder .cards .pink {
   background-color: #f9e2f8;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 1024px) {
+  .sections {
+    display: none;
+  }
+  main .links ul {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .container main {
+    flex: 3;
+  }
+  .container main .links ul {
+    justify-content: center;
+  }
+  .container main .links ul li {
+    padding: 20px 5px 11px 5px;
+  }
+  .container main .links ul li a {
+    font-size: 0.7rem;
+  }
+  .container .reminder {
+    text-align: center;
+  }
+  .container .reminder .cards {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .container .reminder .cards .card {
+    height: 130px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container main h2 {
+    font-size: 1.3rem;
+  }
+  .container main .links ul {
+    padding-top: 10px;
+  }
+  .container main .links ul li {
+    padding: 0;
+  }
+  .container main .links ul li a {
+    padding: 15px 20px;
+  }
+  .container .reminder .cards {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
